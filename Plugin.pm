@@ -88,9 +88,9 @@ sub initPlugin {
     # Try to login. If SSL verification fails, login() raises an
     # exception. Catch it to allow the plugin to be started.
     eval {
-        $googleapi->login($prefs->get('username'),
-            decode_base64($prefs->get('password')),
-                        $prefs->get('device_id'));
+        $googleapi->login(decode_utf8($prefs->get('username')),
+            decode_utf8(decode_base64($prefs->get('password'))),
+                        decode_utf8($prefs->get('device_id')));
     };
     if ($@) {
         $log->error("Not able to login to Google Play Music: $@");

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<extensions>
+    <details>
+        <title lang="EN">Squeezebox-GoogleMusic Squeezecenter Plugins</title>
+    </details>
+
+    <plugins>
+        <plugin name="GoogleMusic" version="0.7.1" minTarget="7.5" maxTarget="*">
+            <title lang="EN">3rd Party Google Play Music Plugin</title>
+            <desc  lang="EN">Google Music plugin. Listen to your Google Music library.</desc>
+            <creator>Victor Rajewski</creator>
+            <email>askvictor@gmail.com</email>
+            <url>https://github.com/hoax92/squeezebox-googlemusic/archive/0.7.1a.zip</url>
+            <sha>d56eaddc913703d78e55119b8e0540d9e093a11d</sha>
+            <link>https://github.com/hoax92/squeezebox-googlemusic</link>
+        </plugin>
+    </plugins>
+</extensions>
